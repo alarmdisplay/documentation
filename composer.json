@@ -1,0 +1,19 @@
+{
+  "name": "alarmdisplay/documentation",
+  "description": "The source of the documentation for the Alarmdisplay project",
+  "minimum-stability": "stable",
+  "scripts": {
+    "build": "daux generate",
+    "serve": "daux serve"
+  },
+  "license": "AGPL-3.0-only",
+  "authors": [
+    {
+      "name": "Andreas Brain",
+      "email": "alarmdisplay@abrain.de"
+    }
+  ],
+  "require-dev": {
+    "daux/daux.io": "0.13.0"
+  }
+}
