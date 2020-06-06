@@ -1,0 +1,30 @@
+{
+  "title": "Projekt Alarmdisplay",
+  "tagline": "Informationssystem für Hilfsorganisationen",
+  "author": "Andreas Brain",
+  "image": "app.jpeg",
+  "format": "html",
+  "language": "de",
+  "languages": {"de": "Zur Dokumentation", "en": "View documentation"},
+  "html": {
+    "auto_landing": true,
+    "auto_toc": false,
+    "theme": "daux-blue",
+    "breadcrumbs": true,
+    "breadcrumb_separator": "Chevrons",
+    "toggle_code": false,
+    "date_modified": true,
+    "inherit_index": false,
+    "jump_buttons": false,
+    "edit_on_github": "alarmdisplay/documentation/blob/master/docs",
+    "google_analytics": false,
+    "plausible_domain": false,
+    "links": {
+      "GitHub Repository": "https://github.com/alarmdisplay/meta"
+    },
+    "powered_by": "Powered by Daux.io"
+  },
+  "live": {
+    "clean_urls": true
+  }
+}
