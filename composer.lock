@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a367fb3e75c81e846309e5d1a7102a50",
+    "content-hash": "466eb32178131ec458bf1083009a3ce1",
     "packages": [],
     "packages-dev": [
         {
             "name": "daux/daux.io",
-            "version": "0.13.0",
+            "version": "0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dauxio/daux.io.git",
-                "reference": "ec8530b264c1144aa578d516fe5e107e5668f067"
+                "reference": "d5565362c8b8edaa737337c6a5b388fb6d542587"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dauxio/daux.io/zipball/ec8530b264c1144aa578d516fe5e107e5668f067",
-                "reference": "ec8530b264c1144aa578d516fe5e107e5668f067",
+                "url": "https://api.github.com/repos/dauxio/daux.io/zipball/d5565362c8b8edaa737337c6a5b388fb6d542587",
+                "reference": "d5565362c8b8edaa737337c6a5b388fb6d542587",
                 "shasum": ""
             },
             "require": {
@@ -29,11 +29,11 @@
                 "myclabs/deep-copy": "^1.5",
                 "php": ">=7.2",
                 "scrivo/highlight.php": "^9.15",
-                "symfony/console": "^5.0",
-                "symfony/http-foundation": "^5.0",
-                "symfony/mime": "^5.0",
+                "symfony/console": "^4.4|^5.0",
+                "symfony/http-foundation": "^4.4|^5.0",
+                "symfony/mime": "^4.4|^5.0",
                 "symfony/polyfill-intl-icu": "^1.10",
-                "symfony/process": "^5.0",
+                "symfony/process": "^4.4|^5.0",
                 "webuni/front-matter": "^1.0.0"
             },
             "replace": {
@@ -76,7 +76,7 @@
                 "markdown",
                 "md"
             ],
-            "time": "2020-04-24T21:45:28+00:00"
+            "time": "2020-06-05T21:27:20+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
