@@ -22,6 +22,9 @@
     "links": {
       "GitHub Repository": "https://github.com/alarmdisplay/meta"
     },
+    "twitter": [
+      "alarm_display"
+    ],
     "powered_by": "Powered by Daux.io"
   },
   "live": {
