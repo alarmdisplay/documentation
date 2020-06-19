@@ -14,7 +14,7 @@
     "breadcrumb_separator": "Chevrons",
     "toggle_code": false,
     "date_modified": true,
-    "inherit_index": false,
+    "inherit_index": true,
     "jump_buttons": false,
     "edit_on_github": "alarmdisplay/documentation/blob/master/docs",
     "google_analytics": false,
