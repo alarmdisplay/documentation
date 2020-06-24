@@ -20,6 +20,8 @@
     "google_analytics": false,
     "plausible_domain": false,
     "links": {
+      "Webseite": "https://alarmdisplay.org",
+      "Community-Forum": "https://community.alarmdisplay.org",
       "GitHub Repository": "https://github.com/alarmdisplay/meta"
     },
     "twitter": [

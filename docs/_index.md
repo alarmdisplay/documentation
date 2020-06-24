@@ -4,4 +4,9 @@ Neben der frei verfügbaren Software wird diese Dokumentation zur Verfügung ges
 Mit ihr soll die Einrichtung und der Betrieb für alle, die Interesse haben, möglich werden.
 Deshalb ist es wichtig, dass die Dokumentation umfassend und verständlich ist.
 
-Sollte dies einmal nicht der Fall sein, freuen wir uns über eine Rückmeldung, wahlweise per [Email](mailto:hello@alarmdisplay.org) oder als [Issue auf GitHub](https://github.com/alarmdisplay/documentation/issues).
+Sollte dies einmal nicht der Fall sein, freuen wir uns über eine Rückmeldung, wahlweise im [Forum](https://community.alarmdisplay.org/) oder als [Issue auf GitHub](https://github.com/alarmdisplay/documentation/issues).
+
+**Beta-Test:**
+Im Moment befindet sich die Software noch in einer Testphase, zur Teilnahme am [Beta-Test](https://alarmdisplay.org/beta/) sind alle eingeladen.
+Die Maßnahmen zur Zugangsbeschränkung (sowohl für Benutzer als auch für den Datenzugriff) sind noch nicht vollständig.
+Der Betrieb erfolgt auf eigene Verantwortung.

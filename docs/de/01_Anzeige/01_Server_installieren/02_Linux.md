@@ -65,7 +65,7 @@ node src/index.js
 ```
 Der Server sollte starten, sich mit der Datenbank verbinden und die benötigten Datenbanktabellen anlegen.
 Zum Schluss sollte `Server listens on port 3000` (oder ein anderer eingestellter Port) ausgegeben werden.
-Wenn das nicht der Fall ist oder Fehler ausgegeben werden, bitte [auf GitHub](https://github.com/alarmdisplay/display-backend/issues) einen neuen Issue anlegen.
+Wenn das nicht der Fall ist oder Fehler ausgegeben werden, bitte [im Forum](https://community.alarmdisplay.org/c/support/beta-test/6) einen Fehlerbericht verfassen.
 
 ## Als Service einrichten
 Damit der Server dauerhaft läuft und bei einem Neustart automatisch startet, kann er als Service eingerichtet werden.
