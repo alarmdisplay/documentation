@@ -3,12 +3,6 @@ title: Debian / Raspberry Pi OS
 ---
 [TOC]
 
-## Vorwort
-**Aktuell ist die Software als Prototyp einzustufen und nicht für den Echtbetrieb vorgesehen.**
-Im Rahmen des Beta-Tests sind Testinstallationen und die daraus gewonnenen Erfahrungen sehr willkommen.
-Es müssen aktuell noch Abstriche bei der Stabilität oder der Sicherheit in Kauf genommen werden.
-Deshalb wird dringend geraten, die Software nur in einem nicht öffentlich zugänglichen Netz zu betreiben.
-
 Diese Anleitung gilt für Systeme auf Basis von [Debian GNU/Linux](https://www.debian.org/) und damit auch [Ubuntu](https://ubuntu.com/), [Linux Mint](https://linuxmint.com/) und [Raspberry Pi OS](https://www.raspberrypi.org/downloads/raspberry-pi-os/).
 
 ## Node.js

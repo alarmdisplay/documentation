@@ -3,6 +3,12 @@ title: Voraussetzungen
 ---
 [TOC]
 
+## Vorwort
+**Aktuell ist die Software als Prototyp einzustufen und nicht für den Echtbetrieb vorgesehen.**
+Im Rahmen des Beta-Tests sind Testinstallationen und die daraus gewonnenen Erfahrungen sehr willkommen.
+Es müssen aktuell noch Abstriche bei der Stabilität oder der Sicherheit in Kauf genommen werden.
+Deshalb wird dringend geraten, die Software nur in einem nicht öffentlich zugänglichen Netz zu betreiben.
+
 ## Hardware & Betriebssystem
 Grundsätzlich sollte das Betriebssystem keine große Rolle spielen.
 Da es ein Ziel des Projekts ist, den Einstieg ohne bestehende Hardware günstig zu halten, liegt der Fokus auf der Kompatibilität mit dem [Raspberry Pi](https://www.raspberrypi.org/) und _Raspberry Pi OS_.
