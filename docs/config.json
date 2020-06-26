@@ -5,7 +5,7 @@
   "image": "app.jpeg",
   "format": "html",
   "language": "de",
-  "languages": {"de": "Zur Dokumentation", "en": "View documentation"},
+  "languages": {"de": "Zur Dokumentation"},
   "html": {
     "auto_landing": true,
     "auto_toc": false,
@@ -16,13 +16,14 @@
     "date_modified": true,
     "inherit_index": true,
     "jump_buttons": false,
+    "repo": "alarmdisplay",
     "edit_on_github": "alarmdisplay/documentation/blob/master/docs",
     "google_analytics": false,
     "plausible_domain": false,
     "links": {
       "Webseite": "https://alarmdisplay.org",
       "Community-Forum": "https://community.alarmdisplay.org",
-      "GitHub Repository": "https://github.com/alarmdisplay/meta"
+      "GitHub-Repository": "https://github.com/alarmdisplay/"
     },
     "twitter": [
       "alarm_display"
