@@ -5,6 +5,8 @@ title: Debian / Raspberry Pi OS
 
 Diese Anleitung gilt für Systeme auf Basis von [Debian GNU/Linux](https://www.debian.org/) und damit auch [Ubuntu](https://ubuntu.com/), [Linux Mint](https://linuxmint.com/) und [Raspberry Pi OS](https://www.raspberrypi.org/downloads/raspberry-pi-os/).
 
+Die gezeigten Befehle werden im Terminal ausgeführt.
+
 ## Node.js
 Wie bereits in den [Voraussetzungen](Voraussetzungen#page_Node.js) erwähnt, wird Node.js benötigt.
 Ebenso brauchen wir [npm](https://www.npmjs.com/) (Node Package Manager), um die Abhängigkeiten zu installieren.
@@ -14,12 +16,11 @@ sudo apt-get install nodejs npm
 ````
 
 ## Server vorbereiten
-TODO: Release herunterladen
-
+Das Beta-Release kann [hier](https://github.com/alarmdisplay/display-backend/releases/download/v1.0.0-beta.1/display-1.0.0-beta.1.tar.gz) heruntergeladen werden.
 Anschließend wird die Datei entpackt, ein neuer Ordner `display` entsteht.
 
 ```bash
-tar -xzf release.tar.gz
+tar -xzf display-1.0.0-beta.1.tar.gz
 cd display
 ```
 
