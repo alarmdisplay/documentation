@@ -12,3 +12,5 @@ Meldet euch bei Interesse und Problemen im [Forum](https://community.alarmdispla
 
 Die Maßnahmen zur Zugangsbeschränkung (sowohl für Benutzer als auch für den Datenzugriff) sind noch nicht vollständig.
 Der Betrieb erfolgt auf eigene Verantwortung.
+
+**Am 26. August erscheint eine neue Beta-Version von Alarmzentrale und Alarmanzeige.**
