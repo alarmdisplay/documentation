@@ -24,3 +24,5 @@ Das Projekt gliedert sich in zwei Teilbereiche auf, die [Alarmanzeige](01_Anzeig
 Die beiden Komponenten sind zwar aufeinander abgestimmt bzw. miteinander kompatibel, sie funktionieren aber auch eigenständig.
 Der Austausch von Informationen findet ausschließlich über die REST-API statt, es gibt keine gemeinsame Datenbank.
 Dadurch kann eine Komponente auch einzeln betrieben und mit eigener Software kombiniert werden.
+
+![](architektur_transparent.png)
