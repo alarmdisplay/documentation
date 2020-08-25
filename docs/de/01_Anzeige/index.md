@@ -6,7 +6,12 @@ Für eine benutzerfreundliche Einrichtung und Verwaltung stellt der Server die [
 
 ## Features
 
-- Ruhemodus mit Anzeige von Uhrzeit, Ankündigungen, Unwetterkarten des DWD, ...
-- Übersichtliche Anzeige von Einsatzdaten im Alarmfall
-- Kann auf jedem Gerät mit einem Webbrowser angezeigt werden
-- Per REST-API steuer- und konfigurierbar
+- Web-App für Anzeigegeräte
+    - Ruhemodus mit Uhrzeit/Datum, Ankündigungen und DWD-Unwetterkarten
+    - Alarmbildschirm mit Einsatzgrund, Stichwort, Zeit seit dem Alarmeingang, Zieladresse und Freitext der Leitstelle
+- Web-App zur Verwaltung aller Einstellungen im Browser
+    - Schneller Einrichtungsprozess für neue Displays
+    - Drag-and-drop-Konfiguration von Anzeige-Layouts
+    - Nutzeraccounts (derzeit alle mit der gleichen Berechtigung)
+- REST-API und WebSocket-Verbindung für eigene Software
+    - Authentifizierung mit JWT und statischen API-Keys
