@@ -11,9 +11,9 @@ Die gezeigten Befehle werden im Terminal ausgeführt.
 Wie bereits in den [Voraussetzungen](../../Voraussetzungen#page_Node.js) erwähnt, wird Node.js benötigt.
 Ebenso brauchen wir [npm](https://www.npmjs.com/) (Node Package Manager), um die Abhängigkeiten zu installieren.
 Beides kann aus den Paketquellen installiert werden.
-````bash
+```bash
 sudo apt-get install nodejs npm
-````
+```
 
 ## Server vorbereiten
 Das Beta-Release kann [hier](https://github.com/alarmdisplay/display-backend/releases/download/v1.0.0-beta.1/display-1.0.0-beta.1.tar.gz) heruntergeladen werden.
