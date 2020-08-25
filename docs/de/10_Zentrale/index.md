@@ -17,6 +17,6 @@ Sobald sie f&uuml;r den Probebetrieb geeignet ist, wird die Dokumentation hier v
 - Anreichern der Daten mit externen Informationen
 
 ### Ausgabe
-- Weiterleitung an die [Alarmanzeige](../01_Anzeige)
+- Weiterleitung an die [Alarmanzeige](../20_Anzeige)
 - Versand einer E-Mail
 - Aufruf einer REST-API
