@@ -57,6 +57,9 @@ Mit den Werten aus der [Anleitung zum Anlegen der Datenbank](01_Allgemein#page_D
 Ebenso wurde der Port, auf dem der Server lauscht, auf 4711 geändert.
 Wird die Zeile weggelassen, wird standardmäßig der Port 3030 verwendet.
 
+Wird die Option `validate_location` auf `true` gesetzt, so werden erkannte Adressen aus Alarmfaxen mit [Nominatim](https://nominatim.org/) abgeglichen.
+Im Standard ist diese Option deaktiviert.
+
 ## Der erste Start
 Der Server kann jetzt zur Probe von der Kommandozeile aus gestartet werden.
 ```bash
