@@ -8,7 +8,7 @@ Diese Anleitung gilt für Systeme auf Basis von [Debian GNU/Linux](https://www.d
 Die gezeigten Befehle werden im Terminal ausgeführt.
 
 ## Node.js
-Wie bereits in den [Voraussetzungen](Voraussetzungen#page_Node.js) erwähnt, wird Node.js benötigt.
+Wie bereits in den [Voraussetzungen](../../Voraussetzungen#page_Node.js) erwähnt, wird Node.js benötigt.
 Ebenso brauchen wir [npm](https://www.npmjs.com/) (Node Package Manager), um die Abhängigkeiten zu installieren.
 Beides kann aus den Paketquellen installiert werden.
 ````bash
@@ -40,7 +40,7 @@ edit ./config/production.json
 
 Diese Datei überschreibt Werte aus der Datei `default.json` aus dem gleichen Verzeichnis mit Werten für den Echtbetrieb ("production").
 Essenziell ist dabei der Wert `mysql`, der die Datenbankverbindung definiert.
-Mit den Werten aus der [Anleitung zum Anlegen der Datenbank](Voraussetzungen#page_Datenbank) könnte die Datei dann so aussehen:
+Mit den Werten aus der [Anleitung zum Anlegen der Datenbank](Allgemein#page_Datenbank) könnte die Datei dann so aussehen:
 ```json
 {
   "port": "4711",

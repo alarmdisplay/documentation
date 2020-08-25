@@ -7,10 +7,9 @@ Deshalb ist es wichtig, dass die Dokumentation umfassend und verständlich ist.
 Sollte dies einmal nicht der Fall sein, freuen wir uns über eine Rückmeldung, wahlweise im [Forum](https://community.alarmdisplay.org/) oder als [Issue auf GitHub](https://github.com/alarmdisplay/documentation/issues).
 
 ### Beta-Test
-Im Moment befindet sich die Software noch in einer Testphase, zur Teilnahme am Beta-Test sind alle eingeladen.
-Meldet euch bei Interesse und Problemen im [Forum](https://community.alarmdisplay.org/c/support/beta-test/6).
+**Aktuell ist die Software als Prototyp einzustufen und nicht für den Echtbetrieb in kritischen Umgebungen vorgesehen.**
+Im Rahmen des Beta-Tests sind Testinstallationen und die daraus gewonnenen Erfahrungen sehr willkommen.
+Unter Umständen müssen Abstriche bei der Stabilität in Kauf genommen werden.
+Aufgrund der Sensibilität der verarbeiteten Informationen raten wir, die Software nur in einem nicht öffentlich zugänglichen Netz zu betreiben.
 
-Die Maßnahmen zur Zugangsbeschränkung (sowohl für Benutzer als auch für den Datenzugriff) sind noch nicht vollständig.
-Der Betrieb erfolgt auf eigene Verantwortung.
-
-**Am 26. August erscheint eine neue Beta-Version von Alarmzentrale und Alarmanzeige.**
+Unterstützung beim Beta-Test gibt es im [Forum](https://community.alarmdisplay.org/c/support/beta-test/6).
