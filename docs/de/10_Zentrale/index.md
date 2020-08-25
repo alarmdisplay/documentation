@@ -1,22 +1,20 @@
 ---
 title: Alarmzentrale
 ---
-Die Alarmzentrale befindet sich noch in der Entwicklung.
-Sobald sie f&uuml;r den Probebetrieb geeignet ist, wird die Dokumentation hier ver&ouml;ffentlicht.
+Die Alarmzentrale ist eine reine Serverkomponente zur Datenverarbeitung.
+Für eine benutzerfreundliche Einrichtung und Verwaltung stellt der Server die [Console](05_Console.md) zur Verfügung.
 
-## Geplante Funktionen
+## Features
 
-### Alarmeingang
-- Überwachen eines Ordners auf neue Dateien (z. B. PDF nach Faxempfang)
-- Überwachen eines E-Mail-Postfachs auf neue Nachrichten
-- Zulieferung durch andere Software per REST-API
+- Überwachung von Ordnern auf neue (Alarmfax-) PDF-Dateien
+- Auslesen dieser PDF-Dateien *
+- Optionale Validierung von Adressen mittels OpenStreetMap
+- Kombination von Alarmeingängen zu Einsätzen
+- Weiterleitung der Einsätze an die Alarmanzeige
+- Web-App zur Verwaltung aller Einstellungen im Browser
+    - Nutzeraccounts (derzeit alle mit der gleichen Berechtigung)
+- REST-API und WebSocket-Verbindung für eigene Software
+    - Authentifizierung mit JWT und statischen API-Keys
+    - API-Endpunkt zum Zuliefern von ausgelösten Selektivrufen
 
-### Verarbeitung
-- Herauslösen und Validieren relevanter Informationen
-- Verschiedene Alarmeingänge zu einem Einsatz kombinieren
-- Anreichern der Daten mit externen Informationen
-
-### Ausgabe
-- Weiterleitung an die [Alarmanzeige](../20_Anzeige)
-- Versand einer E-Mail
-- Aufruf einer REST-API
+*: Derzeit wird nur das Alarmfax der ILS Augsburg unterstützt, weitere benötigte Formate bitte [im Forum](https://community.alarmdisplay.org/c/funktionalitaet/alarmzentrale/9) melden
