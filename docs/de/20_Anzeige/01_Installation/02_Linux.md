@@ -51,6 +51,11 @@ Mit den Werten aus der [Anleitung zum Anlegen der Datenbank](Allgemein#page_Date
 Ebenso wurde der Port, auf dem der Server lauscht, auf 4711 geändert.
 Wird die Zeile weggelassen, wird standardmäßig der Port 3031 verwendet.
 
+## Mit der Alarmzentrale verbinden
+Soll die Alarmanzeige mit Einsätzen von der Alarmzentrale versorgt werden, so müssen die beiden Systeme verbunden werden.
+Gib dazu in der `production.json` bei der Option `hub_host` die URL zur Alarmzentrale an (z. B. http://localhost:3030).
+Bei der Option `hub_api_key` trägst du einen API-Key ein, den du in der Console der Alarmzentrale generieren kannst.
+
 ## Der erste Start
 Der Server kann jetzt zur Probe von der Kommandozeile aus gestartet werden.
 ```bash
