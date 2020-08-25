@@ -4,10 +4,10 @@ title: Voraussetzungen
 [TOC]
 
 ## Vorwort
-**Aktuell ist die Software als Prototyp einzustufen und nicht für den Echtbetrieb vorgesehen.**
+**Aktuell ist die Software als Prototyp einzustufen und nicht für den Echtbetrieb in kritischen Umgebungen vorgesehen.**
 Im Rahmen des Beta-Tests sind Testinstallationen und die daraus gewonnenen Erfahrungen sehr willkommen.
-Es müssen aktuell noch Abstriche bei der Stabilität oder der Sicherheit in Kauf genommen werden.
-Deshalb wird dringend geraten, die Software nur in einem nicht öffentlich zugänglichen Netz zu betreiben.
+Unter Umständen müssen Abstriche bei der Stabilität in Kauf genommen werden.
+Aufgrund der Sensibilität der verarbeiteten Informationen raten wir, die Software nur in einem nicht öffentlich zugänglichen Netz zu betreiben.
 
 ## Hardware & Betriebssystem
 Grundsätzlich sollte das Betriebssystem keine große Rolle spielen.
@@ -53,7 +53,7 @@ Der Teil nach `IDENTIFIED BY` stellt das Passwort dar, dieses sollte natürlich 
 
 ```sql
 CREATE USER `displayserver`@`localhost`
-  IDENTIFIED BY 'Bitte ersetzen';
+  IDENTIFIED BY 'Bitte_ersetzen';
 ```
 
 ### Benutzerrechte vergeben

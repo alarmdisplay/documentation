@@ -33,33 +33,31 @@ npm install --only=production
 ```
 
 Dann müssen noch ein paar Parameter konfiguriert werden, ohne die der Server nicht starten kann.
-Diese werden in einer Datei namens `.env` gespeichert.
-Die Datei `.env.example` enthält Beispielwerte und kann als Vorlage benutzt werden.
+Bearbeite dazu die Datei `production.json` im Verzeichnis `config/`.
 ```bash
-cp .env.example .env
-edit .env
+edit ./config/production.json
 ```
 
+Diese Datei überschreibt Werte aus der Datei `default.json` aus dem gleichen Verzeichnis mit Werten für den Echtbetrieb ("production").
+Essenziell ist dabei der Wert `mysql`, der die Datenbankverbindung definiert.
 Mit den Werten aus der [Anleitung zum Anlegen der Datenbank](Voraussetzungen#page_Datenbank) könnte die Datei dann so aussehen:
-```bash
-DB_HOST=localhost
-DB_USER=displayserver
-DB_PASSWORD=ein-anderes-sicheres-Passwort
-DB_NAME=ad_display
-DB_PREFIX=disp_
+```json
+{
+  "port": "4711",
+  "mysql": "mysql://displayserver:Bitte_ersetzen@localhost:3306/ad_display"
+}
 ```
-`DB_PREFIX` definiert ein Präfix, das allen Namen für Tabellen vorangestellt wird.
-Damit wird eine Unterscheidung möglich, falls noch andere Software mit derselben Datenbank arbeitet.
 
-Soll der Server statt auf dem Port 3000 auf dem Port 4711 lauschen, kann eine Zeile mit `PORT=4711` angefügt werden.
+Ebenso wurde der Port, auf dem der Server lauscht, auf 4711 geändert.
+Wird die Zeile weggelassen, wird standardmäßig der Port 3031 verwendet.
 
 ## Der erste Start
 Der Server kann jetzt zur Probe von der Kommandozeile aus gestartet werden.
 ```bash
-node src/index.js
+NODE_ENV=production node index.js
 ```
 Der Server sollte starten, sich mit der Datenbank verbinden und die benötigten Datenbanktabellen anlegen.
-Zum Schluss sollte `Server listens on port 3000` (oder ein anderer eingestellter Port) ausgegeben werden.
+Zum Schluss sollte `Display Backend started on http://localhost:3031` (oder ein anderer eingestellter Port) ausgegeben werden.
 Wenn das nicht der Fall ist oder Fehler ausgegeben werden, bitte [im Forum](https://community.alarmdisplay.org/c/support/beta-test/6) einen Fehlerbericht verfassen.
 
 ## Als Service einrichten
@@ -68,13 +66,13 @@ Dies geht beispielsweise mit [forever-service](https://github.com/zapty/forever-
 ```bash
 npm install -g forever
 npm install -g forever-service
-sudo forever-service install -s src/index.js -r pi ad_display
+sudo forever-service install -s index.js -r pi -e "NODE_ENV=production" alarmdisplay_display
 ```
 Die Option `-r pi` gibt an, dass der Prozess unter dem Benutzer `pi` ausgeführt werden soll.
 Hier kann ein beliebiger anderer Benutzer angegeben werden, aus Sicherheitsgründen sollte es aber nicht `root` sein.
-Der Name des neuen Services ist hier `ad_display`, auch dieser kann nach eigenen Vorlieben verändert werden.
+Der Name des neuen Services ist hier `alarmdisplay_display`, auch dieser kann nach eigenen Vorlieben verändert werden.
 
 ## Betrieb überwachen
 Der Server protokolliert wichtige Ereignisse oder Fehler.
-Wenn der Service im vorigen Schritt `ad_display` genannt wurde, heißt die Protokolldatei `/var/log/ad_display.log`.
-Mit dem Befehl `tail /var/log/ad_display.log` können die neuesten Einträge angesehen werden.
+Wenn der Service im vorigen Schritt `alarmdisplay_display` genannt wurde, heißt die Protokolldatei `/var/log/alarmdisplay_display.log`.
+Mit dem Befehl `tail /var/log/alarmdisplay_display.log` können die neuesten Einträge angesehen werden.
