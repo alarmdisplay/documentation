@@ -31,9 +31,12 @@ Erzeugt werden API-Keys in der Console unter Administration > API-Keys.
 Ein API-Key wird nach dem Anlegen nur einmalig angezeigt und muss sofort notiert werden.
 Diese Keys sind bis auf Widerruf gültig.
 
-## API-Endpunkte
+## Endpunkte
 Es folgt eine Auflistung der verschiedenen Ressourcen, die über die API verwaltet werden können.
 Mittelfristig soll diese Liste durch eine _Open API Specification_ abgelöst werden.
+
+### `/authentication`
+Abruf eines JWT
 
 ### `/api-keys`
 Die API-Keys
