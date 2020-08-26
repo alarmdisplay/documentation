@@ -22,7 +22,7 @@ sudo apt-get install imagemagick tesseract-ocr-deu
 ```
 
 ## Server vorbereiten
-Das Beta-Release kann [hier](https://github.com/alarmdisplay/hub-backend/releases/download/v1.0.0-beta.1/hub-1.0.0-beta.1.tar.gz) heruntergeladen werden.
+Das Beta-Release kann [hier](https://github.com/alarmdisplay/hub-backend/releases/download/1.0.0-beta.1/hub-1.0.0-beta.1.tar.gz) heruntergeladen werden.
 Anschließend wird die Datei entpackt, ein neuer Ordner `hub` entsteht.
 
 ```bash

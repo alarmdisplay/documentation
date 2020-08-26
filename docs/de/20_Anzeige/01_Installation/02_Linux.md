@@ -16,11 +16,11 @@ sudo apt-get install nodejs npm
 ```
 
 ## Server vorbereiten
-Das Beta-Release kann [hier](https://github.com/alarmdisplay/display-backend/releases/download/v1.0.0-beta.1/display-1.0.0-beta.1.tar.gz) heruntergeladen werden.
+Das Beta-Release kann [hier](https://github.com/alarmdisplay/display-backend/releases/download/v1.0.0-beta.2/display-1.0.0-beta.2.tar.gz) heruntergeladen werden.
 Anschließend wird die Datei entpackt, ein neuer Ordner `display` entsteht.
 
 ```bash
-tar -xzf display-1.0.0-beta.1.tar.gz
+tar -xzf display-1.0.0-beta.2.tar.gz
 cd display
 ```
 
