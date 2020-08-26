@@ -2,8 +2,9 @@
 title: API
 ---
 
-Die API wird vom Server unter dem Pfad `/api/v1/` bereitgestellt.
-Wenn der Server der Alarmzentrale unter der IP-Adresse _192.168.1.5_ auf Port 4711 läuft, ist die API unter `http://192.168.1.5:4711/api/v1/` erreichbar.
+Die API wird vom Server derzeit unter dem Pfad `/` bereitgestellt, soll aber noch unter `/api/v1/` verschoben werden.
+Wenn der Server der Alarmzentrale unter der IP-Adresse _192.168.1.5_ auf Port 4711 läuft, ist die API unter `http://192.168.1.5:4711/` erreichbar.
+Eine Liste der Endpunkte folgt weiter unten.
 
 ## Authentifikation
 Alle Endpunkte – mit ganz vereinzelten Ausnahmen – sind nur mit Authentifikation benutzbar.
@@ -29,3 +30,40 @@ Der Key muss im HTTP-Header `x-api-key` übermittelt werden.
 Erzeugt werden API-Keys in der Console unter Administration > API-Keys.
 Ein API-Key wird nach dem Anlegen nur einmalig angezeigt und muss sofort notiert werden.
 Diese Keys sind bis auf Widerruf gültig.
+
+## API-Endpunkte
+Es folgt eine Auflistung der verschiedenen Ressourcen, die über die API verwaltet werden können.
+Mittelfristig soll diese Liste durch eine _Open API Specification_ abgelöst werden.
+
+### `/api-keys`
+Die API-Keys
+
+### `/incidents`
+Die Einsätze
+
+### `/input/pager`
+Endpunkt zum Zuliefern von ausgelösten Selektivrufen, siehe [Pager-API](10_Quellen/Pager-API.md).
+
+### `/locations`
+Die Örtlichkeiten von Einsätzen
+
+### `/resources`
+Die Einsatzmittel
+
+### `/resource-identifiers`
+Die zusätzlichen Bezeichner von Einsatzmitteln wie Namen oder Selektivrufen
+
+### `/uploads`
+Hier können PDF-Dateien hochgeladen werden, die dann mittels Texterkennung analysiert werden.
+Die Datei muss als Data-URI wie folgt mittels `POST`-Request hochgeladen werden:
+```json
+{
+  "uri": "data:application/pdf;base64,JVBERi0xLjQKMS..."
+}
+```
+
+### `/users`
+Die Benutzer
+
+### `/watchedfolders`
+Auf Dateiänderungen überwachte Ordner
