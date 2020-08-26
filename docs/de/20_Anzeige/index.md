@@ -15,3 +15,11 @@ Für eine benutzerfreundliche Einrichtung und Verwaltung stellt der Server die [
     - Nutzeraccounts (derzeit alle mit der gleichen Berechtigung)
 - REST-API und WebSocket-Verbindung für eigene Software
     - Authentifizierung mit JWT und statischen API-Keys
+
+## Bilder
+
+So kann die Alarmanzeige in der Praxis aussehen.
+Das Layout und der Inhalt des Ruhebildschirms können individuell angepasst werden.
+
+![](sample_ruhemodus.jpeg)
+![](sample_einsatz.jpeg)
