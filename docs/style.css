@@ -1,0 +1,40 @@
+.Brand, .Navbar {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.Homepage {
+    background-color: #bdcddd;
+    color: #212529;
+}
+
+.HomepageButtons .Button--hero.Button--primary {
+    background-color: #AA050D;
+    color: #f7f7f7;
+}
+
+.HomepageButtons .Button--hero.Button--secondary {
+    background-color: #bdcddd;
+    color: #3f4657;
+}
+
+.HomepageButtons .Button--hero {
+    border: 5px solid #343a40;
+}
+
+.HomepageButtons {
+    background-color: #343a40;
+}
+
+.HomepageFooter {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.HomepageFooter li a {
+    color: #ffffff;
+}
+
+a {
+    color: #aa050d;
+}
