@@ -13,6 +13,11 @@
       "email": "alarmdisplay@abrain.de"
     }
   ],
+  "config": {
+    "platform": {
+      "php": "7.4.15"
+    }
+  },
   "require-dev": {
     "daux/daux.io": "0.15.*"
   }
