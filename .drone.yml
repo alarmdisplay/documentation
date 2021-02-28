@@ -21,6 +21,7 @@ steps:
       PLUGIN_HOSTNAME:
         from_secret: ftphost
       PLUGIN_SRC_DIR: /static
+      PLUGIN_DEST_DIR: /static
     when:
       event:
         exclude:
