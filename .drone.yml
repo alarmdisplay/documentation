@@ -32,6 +32,9 @@ steps:
       webhook:
         from_secret: slack_hook
     when:
+      status:
+        - failure
+        - success
       event:
         exclude:
           - pull_request
