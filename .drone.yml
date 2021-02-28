@@ -20,7 +20,7 @@ steps:
         from_secret: password
       PLUGIN_HOSTNAME:
         from_secret: ftphost
-      PLUGIN_SRC_DIR: ./static/
+      PLUGIN_SRC_DIR: /drone/src/static
       PLUGIN_CLEAN_DIR: true
     when:
       event:
