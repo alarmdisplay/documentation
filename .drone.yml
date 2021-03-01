@@ -22,6 +22,7 @@ steps:
         from_secret: ftphost
       PLUGIN_SRC_DIR: /static
       PLUGIN_DEST_DIR: /static
+      PLUGIN_CLEAN_DIR: true
     when:
       event:
         exclude:
