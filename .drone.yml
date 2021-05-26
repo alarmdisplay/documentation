@@ -21,8 +21,9 @@ steps:
       PLUGIN_HOSTNAME:
         from_secret: ftphost
       PLUGIN_SRC_DIR: /static
-      PLUGIN_DEST_DIR: /static
-      PLUGIN_CLEAN_DIR: true
+      PLUGIN_DEST_DIR: /
+      PLUGIN_MIRROR_OPTS: -e
+      PLUGIN_CLEAN_DIR: false
     when:
       event:
         exclude:
