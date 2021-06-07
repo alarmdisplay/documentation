@@ -24,7 +24,7 @@ Die Antwort enthält ein `accessToken`, das bei künftigen Requests im HTTP-Head
 Das Token ist ab Erhalt für 24 Stunden gültig.
 
 ### API-Key
-Es kann auch ein statischer API-Key verwendet werden, z. B. zur Verwendung in Mikrocontrollern.
+Es kann auch ein statischer API-Key verwendet werden, z. B. zur Verwendung in Mikrocontrollern oder eigenen Skripten.
 Der Key muss im HTTP-Header `x-api-key` übermittelt werden.
 
 Erzeugt werden API-Keys in der Console unter Administration > API-Keys.
@@ -50,20 +50,20 @@ Endpunkt zum Zuliefern von ausgelösten Selektivrufen, siehe [Pager-API](10_Quel
 ### `/locations`
 Die Örtlichkeiten von Einsätzen
 
+### `/print-tasks`
+Druckaufträge für erkannte Dateien
+
 ### `/resources`
 Die Einsatzmittel
 
 ### `/resource-identifiers`
-Die zusätzlichen Bezeichner von Einsatzmitteln wie Namen oder Selektivrufen
+Die zusätzlichen Bezeichner von Einsatzmitteln wie Namen oder Selektivrufe
 
-### `/uploads`
-Hier können PDF-Dateien hochgeladen werden, die dann mittels Texterkennung analysiert werden.
-Die Datei muss als Data-URI wie folgt mittels `POST`-Request hochgeladen werden:
-```json
-{
-  "uri": "data:application/pdf;base64,JVBERi0xLjQKMS..."
-}
-```
+### `/serial-monitors`
+Zu überwachende serielle Schnittstellen
+
+### `/textanalysis`
+Einstellungen, welche Textanalyse für welche Quelle verwendet wird
 
 ### `/users`
 Die Benutzer

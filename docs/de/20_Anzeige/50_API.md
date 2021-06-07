@@ -24,7 +24,7 @@ Die Antwort enthält ein `accessToken`, das bei künftigen Requests im HTTP-Head
 Das Token ist ab Erhalt für 24 Stunden gültig.
 
 ### API-Key
-Es kann auch ein statischer API-Key verwendet werden, z. B. zur Verwendung in Mikrocontrollern.
+Es kann auch ein statischer API-Key verwendet werden, z. B. zur Verwendung in Mikrocontrollern oder eigenen Skripten.
 Der Key muss im HTTP-Header `x-api-key` übermittelt werden.
 
 Erzeugt werden API-Keys in der Console unter Administration > API-Keys.
