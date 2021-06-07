@@ -14,16 +14,13 @@ Diese Unterscheidung kommt aktuell noch nicht zum Tragen und ist nur eine Vorber
 
 ![](resources.png)
 
-## Erkennung im Alarmfax
-Im Alarmfax werden Einsatzmittel oft mit Abkürzungen bezeichnet (z. B. `FL Ottmarsh 47/1` statt 'Ottmarshausen 47/1').
+## Erkennung in Texten
+Im Alarmfax werden Einsatzmittel oft mit Abkürzungen bezeichnet (z. B. _FL Ottmarsh 47/1_).
 Damit diese Einsatzmittel erfolgreich erkannt und zugeordnet werden können, kann bei jedem Einsatzmittel eine Liste von alternativen Namen angegeben werden.
+Bei der Textanalyse werden ausschließlich diese Bezeichner herangezogen.
 
-Leider fehlt in der aktuellen Beta-Version noch die grafische Oberfläche zum Anlegen in der Console.
-Über die [API](../50_API.md#page_section_10) können die alternativen Namen bereits gesetzt werden.
+![](resource-editor.png)
 
 ## Zuordnung von Selektivrufen
 Einem Einsatzmittel können ebenso Selektivrufe zugeordnet werden.
-Selektivrufe, die [per API](../10_Quellen/Pager-API.md) zugeliefert werden, aber keinem Einsatzmittel zugeordnet sind, werden ignoriert.
-
-Leider fehlt in der aktuellen Beta-Version noch die grafische Oberfläche zum Anlegen in der Console.
-Über die [API](../50_API.md#page_section_10) können die Selektivrufe bereits gesetzt werden.
+Dies ist Voraussetzung, um ausgelöste Selektivrufe [per API](../10_Quellen/Pager-API.md) zuliefern zu können.
