@@ -8,6 +8,8 @@ Für eine benutzerfreundliche Einrichtung und Verwaltung stellt der Server die [
 
 - Überwachung von Ordnern auf neue (Alarmfax-) PDF-Dateien
 - Auslesen dieser PDF-Dateien *
+- Ausdruck der erkannten PDF-Dateien
+- Überwachen von seriellen Schnittstellen (z. B. zur DME-Auswertung)
 - Optionale Validierung von Adressen mittels OpenStreetMap
 - Kombination von Alarmeingängen zu Einsätzen
 - Weiterleitung der Einsätze an die Alarmanzeige
@@ -17,4 +19,4 @@ Für eine benutzerfreundliche Einrichtung und Verwaltung stellt der Server die [
     - Authentifizierung mit JWT und statischen API-Keys
     - API-Endpunkt zum Zuliefern von ausgelösten Selektivrufen
 
-*: Derzeit wird nur das Alarmfax der ILS Augsburg unterstützt, weitere benötigte Formate bitte [im Forum](https://community.alarmdisplay.org/c/funktionalitaet/alarmzentrale/9) melden
+*: Derzeit wird nur das Alarmfax der ILS Augsburg und der ILS Bamberg unterstützt, weitere benötigte Formate bitte [im Forum](https://community.alarmdisplay.org/c/funktionalitaet/alarmquellen/9) melden
