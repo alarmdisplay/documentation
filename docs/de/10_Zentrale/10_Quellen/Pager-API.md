@@ -4,6 +4,7 @@ title: Selektivrufe per API
 Über die API können alarmierte Selektivrufe eingespeist werden.
 Diese Schnittstelle ist für eigene Programme gedacht, die z. B. den potenzialfreien Kontakt von Funkmeldeempfängern abgreifen und das Ereignis weitermelden.
 
+## Anfrage
 Der Endpunkt heißt `/input/pager` und erfordert Authentifizierung.
 Es ist nur ein `POST`-Request möglich, der das folgende Format haben muss:
 ```json
@@ -12,6 +13,17 @@ Es ist nur ein `POST`-Request möglich, der das folgende Format haben muss:
 }
 ```
 
-Dieser Request würde bewirken, dass alle Einsatzmittel gesucht werden, die mit dem Selektivruf 12345 verbunden sind.
+Dieser Request würde bewirken, dass alle [Einsatzmittel](../20_Stammdaten/Einsatzmittel.md) gesucht werden, die mit dem Selektivruf 12345 verbunden sind.
 Diese Einsatzmittel werden dann an den aktuellen – oder falls es keinen gibt, einen neuen – Einsatz angehängt.
 Werden keine Einsatzmittel zu dem Selektivruf gefunden, wird kein Einsatz angelegt oder erweitert.
+
+## Antwort
+Wenn die Anfrage erfolgreich war, wird die ID des Einsatzes zurückgegeben und der Status-Code ist 201.
+
+```json
+{
+  "incidentId": 198
+}
+```
+
+Wurde kein Einsatzmittel zum Selektivruf gefunden, so wird der Status 404 zurückgegeben.
