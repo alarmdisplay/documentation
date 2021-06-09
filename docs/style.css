@@ -45,3 +45,12 @@ a {
     padding: 0.5em;
     background-color: aliceblue;
 }
+
+/* Fix contrast */
+.Nav .Nav .Nav__item--active a {
+    color: #000;
+}
+
+.Page__header .EditOn, .Page__header .ModifiedDate {
+    color: #555;
+}
