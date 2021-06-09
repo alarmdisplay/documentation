@@ -38,3 +38,10 @@
 a {
     color: #aa050d;
 }
+
+.notice {
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    padding: 0.5em;
+    background-color: aliceblue;
+}

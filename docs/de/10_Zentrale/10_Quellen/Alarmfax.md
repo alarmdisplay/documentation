@@ -8,21 +8,25 @@ Das ist beispielsweise über die eingebaute Faxfunktion der FRITZ!Box möglich.
 ## Ordner überwachen
 Klicke auf den Reiter _Eingang_ und wähle dann unter _Quelle hinzufügen_ den Punkt _Überwachter Ordner_ aus.
 
-Du kannst einen absoluten Pfad (z. B. `/mnt/faxbox`) oder einen relativen Pfad (z. B. `inbox`) angeben.
+Du kannst einen absoluten **Pfad** (z. B. `/mnt/faxbox`) oder einen relativen Pfad (z. B. `inbox`) angeben.
 Der relative Pfad bezieht sich dann auf das Verzeichnis, in dem der Server läuft.
 
-Derzeit werden ausschließlich PDF-Dateien erkannt.
-
-Die Option _Polling_ ist für lokale Ordner in der Regel nicht notwendig.
-Es kann aktuell jedoch vorkommen, dass neue Dateien in lokalen Ordnern nicht korrekt erkannt werden.
-Aktiviere in diesem Fall die Option _Polling_.
+Die Option **Polling** ist für lokale Ordner in der Regel nicht notwendig.
 Ist der zu überwachende Ordner ein eingehängtes Netzlaufwerk, musst du Polling aktivieren, damit neue Dateien erkannt werden.
 
-Nach dem Speichern kannst du noch ein Layout zur Textanalyse auswählen, mit dem die eingehenden Alarme zerlegt werden.
-Wenn für deine Leitstelle noch kein Layout hinterlegt ist, findest du im nächsten Abschnitt weitere Informationen.
+<p class="notice">
+In der Beta 3 kann es vorkommen, dass neue Dateien in lokalen Ordnern nicht korrekt erkannt werden.
+Aktiviere in diesem Fall die Option <i>Polling</i>.
+Auch werden derzeit ausschließlich PDF-Dateien erkannt.
+</p>
+
+Nach dem Speichern kannst du noch ein **Layout** zur Textanalyse auswählen, mit dem die eingehenden Alarme zerlegt werden.
+Wenn für deine Leitstelle noch kein Layout hinterlegt ist, findest du [weiter unten](#page_Weitere_Layout_Definition_hinzufugen) mehr Informationen.
+
+## Fax ausdrucken
 
 Über den Punkt _Datei weiterverarbeiten &hellip;_ kannst du einen oder mehrere Druckaufträge für die gefundene Datei einrichten.
-Hierzu muss der Drucker bereits in CUPS eingerichtet sein, der Ausdruck funktioniert also erst mal nur unter Linux und macOS.
+Hierzu muss der Drucker bereits in [CUPS](https://www.cups.org/) eingerichtet sein, der Ausdruck funktioniert also erst mal nur unter Linux und macOS.
 
 ## Weitere Layout-Definition hinzufügen
 Derzeit wird das Alarmfax der ILS Augsburg und der ILS Bamberg unterstützt.
