@@ -25,4 +25,4 @@ Die beiden Komponenten sind zwar aufeinander abgestimmt bzw. miteinander kompati
 Der Austausch von Informationen findet ausschließlich über die APIs statt, es gibt keine gemeinsame Datenbank.
 Dadurch kann eine Komponente auch einzeln betrieben und mit eigener Software kombiniert werden.
 
-![](architektur_transparent.png)
+![](architektur_transparent_beta3.png)
