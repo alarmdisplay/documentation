@@ -47,8 +47,8 @@ Um die Dauer auf beispielsweise 8 Stunden zu reduzieren, trage Folgendes ein:
 
 API-Keys sind davon nicht betroffen, diese laufen nie ab.
 
-### Mit der Alarmzentrale verbinden
-Wenn die Alarmanzeige mit Einsätzen von der Alarmzentrale versorgt werden soll, so müssen die beiden Systeme verbunden werden.
+### Mit der Zentrale verbinden
+Wenn die Anzeige mit Einsätzen von der [Zentrale](../10_Zentrale) versorgt werden soll, so müssen die beiden Systeme verbunden werden.
 
 ```json
 {
@@ -57,7 +57,7 @@ Wenn die Alarmanzeige mit Einsätzen von der Alarmzentrale versorgt werden soll,
 }
 ```
 Das sind natürlich nur Beispielwerte.
-Den API-Key kannst du in der Console der Alarmzentrale generieren.
+Den API-Key kannst du in der Console der Zentrale generieren.
 
 ### Logging
 Im Echtbetrieb schreibt die Software nur allgemeine Informationen und Fehler in das Logfile.
@@ -74,10 +74,10 @@ Um einem möglichen Fehler auf die Schliche zu kommen, kannst du hiermit mehr Lo
 Bei der Verwendung von Docker läuft es ein bisschen anders.
 Hier können nur ausgewählte Einstellungen per Umgebungsvariable in den Container gegeben werden.
 
-Bei der Alarmanzeige sind das:
+Bei der Anzeige sind das:
 * MYSQL_URI: Die Datenbankverbindung im `mysql://`-Schema
-* HUB_HOST: (optional) Die URL zur Alarmzentrale (z. B. `http://`)
-* HUB_API_KEY: (optional) Der API-Key, um sich bei der Alarmzentrale anzumelden (z. B. `5:8528966...`)
+* HUB_HOST: (optional) Die URL zur Zentrale (z. B. `http://`)
+* HUB_API_KEY: (optional) Der API-Key, um sich bei der Zentrale anzumelden (z. B. `5:8528966...`)
 
 Um Anpassungen vorzunehmen, die nicht als Umgebungsvariable ausgeführt sind, kannst du ebenfalls eine local-Datei erstellen.
 Allerdings heißt diese nicht _local-production.json_, sondern _local-docker.json_.

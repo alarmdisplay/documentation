@@ -1,7 +1,7 @@
 ---
-title: Alarmanzeige
+title: Anzeige
 ---
-Die Alarmanzeige setzt sich aus einem Server und einem oder mehreren Displays zusammen.
+Die Anzeige setzt sich aus einem Server und einem oder mehreren Displays zusammen.
 Für eine benutzerfreundliche Einrichtung und Verwaltung stellt der Server die [Console](05_Console.md) zur Verfügung.
 
 ## Features
@@ -18,7 +18,7 @@ Für eine benutzerfreundliche Einrichtung und Verwaltung stellt der Server die [
 
 ## Bilder
 
-So kann die Alarmanzeige in der Praxis aussehen.
+So kann die Anzeige in der Praxis aussehen.
 Das Layout und der Inhalt des Ruhebildschirms können individuell angepasst werden.
 
 ![](sample_ruhemodus.jpeg)

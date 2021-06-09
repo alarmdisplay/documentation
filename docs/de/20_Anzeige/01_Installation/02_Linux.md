@@ -27,7 +27,7 @@ tar -xzf display-1.0.0-beta.2.tar.gz
 cd display
 ```
 
-Mit `cd hub` begibst du dich in das Hauptverzeichnis des Servers für die Alarmanzeige.
+Mit `cd hub` begibst du dich in das Hauptverzeichnis des Servers für die Anzeige.
 Alle nachfolgenden Befehle werden in diesem Verzeichnis ausgeführt.
 
 Installiere nun die Abhängigkeiten.

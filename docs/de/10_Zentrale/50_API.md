@@ -3,7 +3,7 @@ title: API
 ---
 
 Die API wird vom Server derzeit unter dem Pfad `/` bereitgestellt, soll aber noch unter `/api/v1/` verschoben werden.
-Wenn der Server der Alarmzentrale unter der IP-Adresse _192.168.1.5_ auf Port 4711 läuft, ist die API unter `http://192.168.1.5:4711/` erreichbar.
+Wenn der Server der Zentrale unter der IP-Adresse _192.168.1.5_ auf Port 4711 läuft, ist die API unter `http://192.168.1.5:4711/` erreichbar.
 Eine Liste der Endpunkte folgt weiter unten.
 
 ## Authentifikation

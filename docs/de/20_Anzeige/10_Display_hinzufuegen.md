@@ -2,14 +2,15 @@
 title: Display hinzuf&uuml;gen
 ---
 
-Um die Alarmanzeige auf einen Monitor zu bringen, wird ein Gerät mit einem Webbrowser benötigt.
+Um die Anzeige auf einen Monitor zu bringen, wird ein Gerät mit einem Webbrowser benötigt.
 Das kann ein vollwertiger PC, aber auch ein Kleinstrechner wie ein Raspberry Pi oder ein Tablet sein.
 
 ## Webanwendung laden
-Die Anzeige wird vom Server unter dem Pfad `/display` bereitgestellt.
-Wenn der Server der Alarmanzeige unter der IP-Adresse _192.168.1.5_ auf Port 4711 läuft, ist die Anzeige unter `http://192.168.1.5:4711/display` erreichbar.
+Die Webanwendung für die Displays wird vom Server unter dem Pfad `/display` bereitgestellt.
+Wenn der Server der Anzeige unter der IP-Adresse _192.168.1.5_ auf Port 4711 läuft, ist die Webanwendung unter `http://192.168.1.5:4711/display` erreichbar.
 
-Gib diese URL in den Browser ein, um die Anzeige zu laden.
+Diese URL ist für alle Displays gleich.
+Die eindeutige Identifizierung einzelner Displays erfolgt im nächsten Schritt.
 
 ## Display freischalten
 Über die oben genannte URL kann zwar die Webanwendung geladen werden, dem Display werden aber nur dann Daten übermittelt, wenn es freigeschaltet wurde.

@@ -33,7 +33,7 @@ tar -xzf hub-1.0.0-beta.1.tar.gz
 cd hub
 ```
 
-Mit `cd hub` begibst du dich in das Hauptverzeichnis des Servers für die Alarmzentrale.
+Mit `cd hub` begibst du dich in das Hauptverzeichnis des Servers für die Zentrale.
 Alle nachfolgenden Befehle werden in diesem Verzeichnis ausgeführt.
 
 Installiere nun die Abhängigkeiten.

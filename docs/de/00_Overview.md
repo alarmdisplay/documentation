@@ -19,7 +19,7 @@ Das Projekt leistet damit seinen Beitrag zur Digitalisierung des Feuerwehr- und 
 Der Quellcode ist unter den Bedingungen der [AGPL v3](https://opensource.org/licenses/AGPL-3.0) verfügbar.
 
 ## Struktur
-Das Projekt gliedert sich in zwei Teilbereiche auf, die [Alarmanzeige](20_Anzeige) und die [Alarmzentrale](10_Zentrale).
+Das Projekt gliedert sich in zwei Teilbereiche auf, die [Zentrale](10_Zentrale) und die [Anzeige](20_Anzeige).
 
 Die beiden Komponenten sind zwar aufeinander abgestimmt bzw. miteinander kompatibel, sie funktionieren aber auch eigenständig.
 Der Austausch von Informationen findet ausschließlich über die APIs statt, es gibt keine gemeinsame Datenbank.

@@ -3,7 +3,7 @@ title: API
 ---
 
 Die API wird vom Server unter dem Pfad `/api/v1/` bereitgestellt.
-Wenn der Server der Alarmanzeige unter der IP-Adresse _192.168.1.5_ auf Port 4711 läuft, ist die API unter `http://192.168.1.5:4711/api/v1/` erreichbar.
+Wenn der Server der Anzeige unter der IP-Adresse _192.168.1.5_ auf Port 4711 läuft, ist die API unter `http://192.168.1.5:4711/api/v1/` erreichbar.
 Eine Liste der Endpunkte folgt weiter unten.
 
 ## Authentifikation

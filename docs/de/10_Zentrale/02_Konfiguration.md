@@ -75,7 +75,7 @@ Um einem möglichen Fehler auf die Schliche zu kommen, kannst du hiermit mehr Lo
 Bei der Verwendung von Docker läuft es ein bisschen anders.
 Hier können nur ausgewählte Einstellungen per Umgebungsvariable in den Container gegeben werden.
 
-Bei der Alarmzentrale sind das:
+Bei der Zentrale sind das:
 * MYSQL_URI: Die Datenbankverbindung im `mysql://`-Schema
 
 Um Anpassungen vorzunehmen, die nicht als Umgebungsvariable ausgeführt sind, kannst du ebenfalls eine local-Datei erstellen.
