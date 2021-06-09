@@ -13,12 +13,14 @@ Für die meisten Fälle reichen diese Standardwerte auch aus, und manche davon s
 Der einzige Wert, der dort nicht gesetzt ist, ist die Datenbankverbindung.
 Deshalb muss diese Einstellung bei der ersten Installation berücksichtigt werden.
 
-Die Standardwerte der _default.json_ können durch weitere Dateien überschrieben und erweitert werden.
+Die Standardwerte der _default.json_ können durch weitere Dateien überschrieben werden.
 Dabei legt die Datei _development.json_ Einstellungen für die Entwicklung fest, und _production.json_ die Einstellungen für den Echtbetrieb.
 
+<p class="notice">
 Diese drei Dateien werden mit jedem Release ausgeliefert.
 Damit bei einem Update eigene Einstellungen nicht verloren gehen, sollten diese Dateien nicht verändert werden.
-Schreibe deine Anpassungen stattdessen in eine Datei namens _local-development.json_ bzw. _local-production.json_.
+Schreibe deine Anpassungen stattdessen in eine Datei namens <i>local-development.json</i> bzw. <i>local-production.json</i>.
+</p>
 
 Weitere technische Details gibt es in der [Dokumentation zu node-config](https://github.com/lorenwest/node-config/wiki/Configuration-Files).
 
