@@ -74,12 +74,7 @@ Um einem möglichen Fehler auf die Schliche zu kommen, kannst du hiermit mehr Lo
 
 ## Anpassungen mit Docker
 Bei der Verwendung von Docker läuft es ein bisschen anders.
-Hier können nur ausgewählte Einstellungen per Umgebungsvariable in den Container gegeben werden.
-
-Bei der Anzeige sind das:
-* MYSQL_URI: Die Datenbankverbindung im `mysql://`-Schema
-* HUB_HOST: (optional) Die URL zur Zentrale (z. B. `http://`)
-* HUB_API_KEY: (optional) Der API-Key, um sich bei der Zentrale anzumelden (z. B. `5:8528966...`)
+Hier können nur ausgewählte Einstellungen per [Umgebungsvariable](Installation/Docker#page_Umgebungsvariablen) in den Container gegeben werden.
 
 Um Anpassungen vorzunehmen, die nicht als Umgebungsvariable ausgeführt sind, kannst du ebenfalls eine local-Datei erstellen.
 Allerdings heißt diese nicht _local-production.json_, sondern _local-docker.json_.
