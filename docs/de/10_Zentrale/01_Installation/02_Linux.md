@@ -28,8 +28,8 @@ Lade das aktuelle Beta-Release herunter und entpacke es.
 Beim Entpacken entsteht ein neuer Ordner `hub`.
 
 ```bash
-wget https://github.com/alarmdisplay/hub/releases/download/1.0.0-beta.1/hub-1.0.0-beta.1.tar.gz
-tar -xzf hub-1.0.0-beta.1.tar.gz
+wget https://github.com/alarmdisplay/hub/releases/download/v1.0.0-beta.3/hub-1.0.0-beta.3.tar.gz
+tar -xzf hub-1.0.0-beta.3.tar.gz
 cd hub
 ```
 
