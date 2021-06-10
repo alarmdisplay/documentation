@@ -7,6 +7,8 @@ Diese Anleitung gilt für Systeme auf Basis von [Debian GNU/Linux](https://www.d
 
 Die gezeigten Befehle werden im Terminal ausgeführt.
 
+Bei Fragen und Problemen kannst du dich [im Forum](https://community.alarmdisplay.org/c/support/5) melden.
+
 ## Node.js
 Wie bereits in den [Voraussetzungen](../../Voraussetzungen#page_Node.js) erwähnt, wird Node.js benötigt.
 Ebenso brauchen wir [npm](https://www.npmjs.com/) (Node Package Manager), um die Abhängigkeiten zu installieren.
@@ -16,45 +18,37 @@ sudo apt-get install nodejs npm
 ```
 
 ## Server vorbereiten
-Das Beta-Release kann [hier](https://github.com/alarmdisplay/display-backend/releases/download/v1.0.0-beta.2/display-1.0.0-beta.2.tar.gz) heruntergeladen werden.
-Anschließend wird die Datei entpackt, ein neuer Ordner `display` entsteht.
+Lade das aktuelle Beta-Release herunter und entpacke es.
+Beim Entpacken entsteht ein neuer Ordner `display`.
 
 ```bash
-tar -xzf display-1.0.0-beta.2.tar.gz
+wget https://github.com/alarmdisplay/display/releases/download/v1.0.0-beta.3/display-1.0.0-beta.3.tar.gz
+tar -xzf display-1.0.0-beta.3.tar.gz
 cd display
 ```
 
-Mit `cd display` begeben wir uns in das Hauptverzeichnis des Servers für die Alarmanzeige.
+Mit `cd hub` begibst du dich in das Hauptverzeichnis des Servers für die Anzeige.
 Alle nachfolgenden Befehle werden in diesem Verzeichnis ausgeführt.
 
-Als Nächstes installieren wir die Abhängigkeiten, dies kann ein wenig dauern.
+Installiere nun die Abhängigkeiten.
 ```bash
 npm install --only=production
 ```
 
-Dann müssen noch ein paar Parameter konfiguriert werden, ohne die der Server nicht starten kann.
-Bearbeite dazu die Datei `production.json` im Verzeichnis `config/`.
+Dann muss noch die Datenbankverbindung konfiguriert werden, ohne die der Server nicht starten kann.
+Lege dazu eine Datei `local-production.json` im Verzeichnis `config/` an.
 ```bash
-edit ./config/production.json
+edit ./config/local-production.json
 ```
 
-Diese Datei überschreibt Werte aus der Datei `default.json` aus dem gleichen Verzeichnis mit Werten für den Echtbetrieb ("production").
-Essenziell ist dabei der Wert `mysql`, der die Datenbankverbindung definiert.
-Mit den Werten aus der [Anleitung zum Anlegen der Datenbank](Allgemein#page_Datenbank) könnte die Datei dann so aussehen:
+Mit den Werten aus der [Anleitung zum Anlegen der Datenbank](Allgemein#page_Datenbank) würde die Datei folgendermaßen aussehen:
 ```json
 {
-  "port": "4711",
   "mysql": "mysql://displayserver:Bitte_ersetzen@localhost:3306/ad_display"
 }
 ```
 
-Ebenso wurde der Port, auf dem der Server lauscht, auf 4711 geändert.
-Wird die Zeile weggelassen, wird standardmäßig der Port 3031 verwendet.
-
-## Mit der Alarmzentrale verbinden
-Soll die Alarmanzeige mit Einsätzen von der Alarmzentrale versorgt werden, so müssen die beiden Systeme verbunden werden.
-Gib dazu in der `production.json` bei der Option `hub_host` die URL zur Alarmzentrale an (z. B. http://localhost:3030).
-Bei der Option `hub_api_key` trägst du einen API-Key ein, den du in der Console der Alarmzentrale generieren kannst.
+Hier trägst du natürlich deine richtigen Daten ein.
 
 ## Der erste Start
 Der Server kann jetzt zur Probe von der Kommandozeile aus gestartet werden.
@@ -62,8 +56,7 @@ Der Server kann jetzt zur Probe von der Kommandozeile aus gestartet werden.
 NODE_ENV=production node index.js
 ```
 Der Server sollte starten, sich mit der Datenbank verbinden und die benötigten Datenbanktabellen anlegen.
-Zum Schluss sollte `Display Backend started on http://localhost:3031` (oder ein anderer eingestellter Port) ausgegeben werden.
-Wenn das nicht der Fall ist oder Fehler ausgegeben werden, bitte [im Forum](https://community.alarmdisplay.org/c/support/beta-test/6) einen Fehlerbericht verfassen.
+Zum Schluss sollte `Display Backend started on http://localhost:3031` ausgegeben werden.
 
 ## Als Service einrichten
 Damit der Server dauerhaft läuft und bei einem Neustart automatisch startet, kann er als Service eingerichtet werden.

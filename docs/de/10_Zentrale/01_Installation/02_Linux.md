@@ -7,6 +7,8 @@ Diese Anleitung gilt für Systeme auf Basis von [Debian GNU/Linux](https://www.d
 
 Die gezeigten Befehle werden im Terminal ausgeführt.
 
+Bei Fragen und Problemen kannst du dich [im Forum](https://community.alarmdisplay.org/c/support/5) melden.
+
 ## Node.js
 Wie bereits in den [Voraussetzungen](../../01_Voraussetzungen#page_Node.js) erwähnt, wird Node.js benötigt.
 Ebenso brauchen wir [npm](https://www.npmjs.com/) (Node Package Manager), um die Abhängigkeiten zu installieren.
@@ -22,43 +24,37 @@ sudo apt-get install imagemagick tesseract-ocr-deu
 ```
 
 ## Server vorbereiten
-Das Beta-Release kann [hier](https://github.com/alarmdisplay/hub-backend/releases/download/1.0.0-beta.1/hub-1.0.0-beta.1.tar.gz) heruntergeladen werden.
-Anschließend wird die Datei entpackt, ein neuer Ordner `hub` entsteht.
+Lade das aktuelle Beta-Release herunter und entpacke es.
+Beim Entpacken entsteht ein neuer Ordner `hub`.
 
 ```bash
-tar -xzf hub-1.0.0-beta.1.tar.gz
+wget https://github.com/alarmdisplay/hub/releases/download/v1.0.0-beta.3/hub-1.0.0-beta.3.tar.gz
+tar -xzf hub-1.0.0-beta.3.tar.gz
 cd hub
 ```
 
-Mit `cd hub` begeben wir uns in das Hauptverzeichnis des Servers für die Alarmzentrale.
+Mit `cd hub` begibst du dich in das Hauptverzeichnis des Servers für die Zentrale.
 Alle nachfolgenden Befehle werden in diesem Verzeichnis ausgeführt.
 
-Als Nächstes installieren wir die Abhängigkeiten, dies kann ein wenig dauern.
+Installiere nun die Abhängigkeiten.
 ```bash
 npm install --only=production
 ```
 
-Dann müssen noch ein paar Parameter konfiguriert werden, ohne die der Server nicht starten kann.
-Bearbeite dazu die Datei `production.json` im Verzeichnis `config/`.
+Dann muss noch die Datenbankverbindung konfiguriert werden, ohne die der Server nicht starten kann.
+Lege dazu eine Datei `local-production.json` im Verzeichnis `config/` an.
 ```bash
-edit ./config/production.json
+edit ./config/local-production.json
 ```
 
-Diese Datei überschreibt Werte aus der Datei `default.json` aus dem gleichen Verzeichnis mit Werten für den Echtbetrieb ("production").
-Essenziell ist dabei der Wert `mysql`, der die Datenbankverbindung definiert.
-Mit den Werten aus der [Anleitung zum Anlegen der Datenbank](01_Allgemein#page_Datenbank) könnte die Datei dann so aussehen:
+Mit den Werten aus der [Anleitung zum Anlegen der Datenbank](01_Allgemein#page_Datenbank) würde die Datei folgendermaßen aussehen:
 ```json
 {
-  "port": "4711",
   "mysql": "mysql://hubserver:Bitte_ersetzen@localhost:3306/ad_hub"
 }
 ```
 
-Ebenso wurde der Port, auf dem der Server lauscht, auf 4711 geändert.
-Wird die Zeile weggelassen, wird standardmäßig der Port 3030 verwendet.
-
-Wird die Option `validate_location` auf `true` gesetzt, so werden erkannte Adressen aus Alarmfaxen mit [Nominatim](https://nominatim.org/) abgeglichen.
-Im Standard ist diese Option deaktiviert.
+Hier trägst du natürlich deine richtigen Daten ein.
 
 ## Der erste Start
 Der Server kann jetzt zur Probe von der Kommandozeile aus gestartet werden.
@@ -66,8 +62,7 @@ Der Server kann jetzt zur Probe von der Kommandozeile aus gestartet werden.
 NODE_ENV=production node index.js
 ```
 Der Server sollte starten, sich mit der Datenbank verbinden und die benötigten Datenbanktabellen anlegen.
-Zum Schluss sollte `Hub Backend started on http://localhost:3030` (oder ein anderer eingestellter Port) ausgegeben werden.
-Wenn das nicht der Fall ist oder Fehler ausgegeben werden, bitte [im Forum](https://community.alarmdisplay.org/c/support/beta-test/6) einen Fehlerbericht verfassen.
+Zum Schluss sollte `Hub Backend started on http://localhost:3030` ausgegeben werden.
 
 ## Als Service einrichten
 Damit der Server dauerhaft läuft und bei einem Neustart automatisch startet, kann er als Service eingerichtet werden.

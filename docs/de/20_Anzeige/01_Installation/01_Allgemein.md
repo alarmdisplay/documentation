@@ -19,11 +19,11 @@ CREATE DATABASE `ad_display`
 ```
 
 ### Benutzer anlegen
-Als Nächstes wird der Benutzer angelegt, mit dem sich der Server der Alarmanzeige am Datenbankserver anmelden kann.
+Als Nächstes wird der Benutzer angelegt, mit dem sich der Server der Anzeige am Datenbankserver anmelden kann.
 
 Der unten gezeigte Befehl richtet einen Nutzer ein, der sich nur lokal anmelden darf.
-Das heißt, der Server für die Alarmanzeige müsste auf demselben System laufen wie die Datenbank.
-Laufen die beiden Server auf unterschiedlichen Systemen, muss `localhost` mit der IP-Adresse des Servers für die Alarmanzeige ersetzt werden.
+Das heißt, der Server für die Anzeige müsste auf demselben System laufen wie die Datenbank.
+Laufen die beiden Server auf unterschiedlichen Systemen, muss `localhost` mit der IP-Adresse des Servers für die Anzeige ersetzt werden.
 Siehe hierzu auch die Dokumentation zu [Benutzernamen bei MariaDB](https://mariadb.com/kb/en/create-user/#account-names).
 
 Der Teil nach `IDENTIFIED BY` stellt das Passwort dar, dieses sollte natürlich durch ein eigenes und sicheres Passwort ersetzt werden.
