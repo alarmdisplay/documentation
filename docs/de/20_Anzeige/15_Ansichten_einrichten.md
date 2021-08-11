@@ -16,7 +16,7 @@ Um den Ruhemodus informativer zu gestalten, stehen eine Reihe von Komponenten zu
 Dazu zählen neben Datum/Uhrzeit noch _Ankündigungen_ zur Auflistung von Neuigkeiten und Unwetterkarten des DWD.
 Weitere Komponenten sind in Planung, Ideen können gerne in der [Community](https://community.alarmdisplay.org/c/funktionalitaet/alarmanzeige/8) eingebracht werden.
 
-Um die Komponenten zu verwenden, muss erst mit dem Knof _Ansicht hinzufügen_ eine leere Ansicht angelegt werden.
+Um die Komponenten zu verwenden, muss erst mit dem Knopf _Ansicht hinzufügen_ eine leere Ansicht angelegt werden.
 Es können auch mehrere Ansichten angelegt werden, diese werden dann im Wechsel angezeigt.
 
 Beim Bearbeiten einer Ansicht können die Komponenten auf einem Raster frei angeordnet werden.
