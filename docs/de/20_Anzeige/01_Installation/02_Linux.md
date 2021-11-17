@@ -24,7 +24,7 @@ Beim Entpacken entsteht ein neuer Ordner `display`.
 ```bash
 wget https://github.com/alarmdisplay/display/releases/download/v1.0.0-beta.3/display-1.0.0-beta.3.tar.gz
 tar -xzf display-1.0.0-beta.3.tar.gz
-cd display
+cd hub
 ```
 
 Mit `cd hub` begibst du dich in das Hauptverzeichnis des Servers für die Anzeige.
