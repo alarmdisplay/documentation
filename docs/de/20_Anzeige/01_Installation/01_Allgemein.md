@@ -40,6 +40,6 @@ Falls im vorhergehenden Schritt der Host-Teil des Benutzers (`localhost`) abgeä
 
 ```sql
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER
-  ON `ad\_display`.*
+  ON `ad_display`.*
   TO `displayserver`@`localhost`;
 ```
