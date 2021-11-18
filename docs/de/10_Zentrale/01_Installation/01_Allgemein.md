@@ -40,6 +40,9 @@ Falls im vorhergehenden Schritt der Host-Teil des Benutzers (`localhost`) abgeä
 
 ```sql
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER
-  ON `ad\_hub`.*
+  ON `ad_hub`.*
   TO `hubserver`@`localhost`;
 ```
+
+Falls statt MariaDB ein MySQL-Server zum Einsatz kommt, sollte vor Unterstrichen in Tabellennamen ein Backslash eingefügt werden (z. B. `ad\_hub`).
+Der Unterstrich gilt dort als Platzhalter und würde im Zweifelsfall Zugriff auf mehr Datenbanken gestatten als beabsichtigt.
