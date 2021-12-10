@@ -18,9 +18,10 @@ sudo apt-get install nodejs npm
 ```
 
 ## Zusätzliche Software
-Für die Verarbeitung von Alarmfaxen wird weitere Software benötigt, die mit dem folgenden Befehl installiert werden kann:
+Für die Verarbeitung von Alarmfaxen wird weitere Software benötigt, die mit den folgenden Befehlen installiert und konfiguriert werden kann:
 ```bash
 sudo apt-get install imagemagick tesseract-ocr-deu
+sudo sed -i.bak '$i\ \ <policy domain="coder" rights="read" pattern="PDF" />' /etc/ImageMagick-6/policy.xml
 ```
 
 ## Server vorbereiten
