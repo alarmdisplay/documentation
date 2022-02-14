@@ -14,6 +14,6 @@
     }
   ],
   "require-dev": {
-    "daux/daux.io": "^0.16.2"
+    "daux/daux.io": "^0.18.1"
   }
 }
