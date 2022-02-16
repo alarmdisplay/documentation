@@ -26,10 +26,6 @@ Die Dimensionen des Rasters (Spalten und Zeilen) können für jede Ansicht separ
 
 Bei den Komponenten _Ankündigungen_ und _DWD-Unwetterkarte_ kann durch einen Klick auf den Namen der Komponente ein Fenster mit Optionen geöffnet werden.
 
-*Hinweis:*
-Aufgrund eines Fehlers werden bei Komponenten, die der Ansicht gerade neu hinzugefügt wurden, die Optionen nicht übernommen.
-Deshalb sollten die Optionen erst bearbeitet werden, nachdem die Ansicht gespeichert wurde.
-
 ## Alarmbildschirm
 Im Moment kann das Aussehen des Alarmbildschirms nicht individuell angepasst werden.
 Der standardmäßige Alarmbildschirm versucht, die vorhandenen Informationen möglichst klar darzustellen.
@@ -39,7 +35,13 @@ Enthalten sind:
 - Stichwort
 - Verstrichene Zeit
 - Adresse
+- Karte des Einsatzortes
 - Freitext
 - Aktuelle Uhrzeit
 
 ![](alert-screen.png)
+
+Die Karte wird angezeigt, sobald Koordinaten in den Einsatzdaten enthalten sind.
+In der Console kann unter _Einstellungen_ die Position der Wache eingetragen werden, um diese mit auf der Karte anzuzeigen.
+
+Wenn das Display als Tablet konfiguriert ist, wird anstelle der Karte ein Knopf angezeigt, mit dem die Koordinaten in eine Navigations- oder Karten-App übernommen werden können.

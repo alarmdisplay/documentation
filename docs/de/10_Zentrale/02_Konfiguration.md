@@ -75,20 +75,17 @@ Um einem möglichen Fehler auf die Schliche zu kommen, kannst du hiermit mehr Lo
 
 ## Anpassungen mit Docker
 Bei der Verwendung von Docker läuft es ein bisschen anders.
-Hier können nur ausgewählte Einstellungen per Umgebungsvariable in den Container gegeben werden.
-
-Bei der Zentrale sind das:
-* MYSQL_URI: Die Datenbankverbindung im `mysql://`-Schema
+Hier können nur ausgewählte Einstellungen per [Umgebungsvariable](Installation/Docker#umgebungsvariablen) in den Container gegeben werden.
 
 Um Anpassungen vorzunehmen, die nicht als Umgebungsvariable ausgeführt sind, kannst du ebenfalls eine local-Datei erstellen.
 Allerdings heißt diese nicht _local-production.json_, sondern _local-docker.json_.
 
 Du kannst sie entweder [direkt einbinden](https://docs.docker.com/engine/reference/commandline/run/#mount-volume--v---read-only)
 ```shell
-... -v custom.json:/home/node/app/config/local-docker.json ...
+... -v local-docker.json:/home/node/app/config/local-docker.json ...
 ```
 oder du baust dir ein Image mit dieser zusätzlichen Datei:
 ```dockerfile
 FROM alarmdisplay/hub
-COPY ./custom.json /home/node/app/config/local-docker.json
+COPY ./local-docker.json /home/node/app/config/local-docker.json
 ```

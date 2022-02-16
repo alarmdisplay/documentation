@@ -44,11 +44,19 @@ HUB_API_KEY=5:852896607ab905...
 Hier wird angenommen, dass die Zentrale in einem Container namens _hub_ läuft.
 Den API-Key bekommst du in der Console der Zentrale.
 
+### Logging
+Die Schwelle für die Logausgaben ist im Standard auf _INFO_ eingestellt, was für den normalen Betrieb ausreicht.
+Zur Fehlersuche kannst du detaillierteres Logging mit der folgenden Umgebungsvariable aktivieren:
+
+```ini
+LOG_LEVEL=debug
+```
+
 ## Container starten
 Starte den Container mit dem folgenden Befehl:
 
 ```shell
-docker run -d --env-file /home/pi/env/display.env -p 3031:3031 --name display --restart always alarmdisplay/display:1.0.0-beta.3
+docker run -d --env-file /home/pi/env/display.env -p 3031:3031 --name display --restart always alarmdisplay/display:1.0.0-beta.4
 ```
 
 Damit läuft der Container im Hintergrund und startet auch automatisch beim Hochfahren deines Rechners.

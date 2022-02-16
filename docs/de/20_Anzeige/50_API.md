@@ -62,6 +62,9 @@ Anfragen von Displays nach API-Keys
 ### `/api/v1/locations`
 Örtlichkeiten von Einsätzen
 
+### `/api/v1/settings`
+Allgemeine Einstellungen
+
 ### `/api/v1/users`
 Die Benutzer
 
