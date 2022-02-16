@@ -15,7 +15,7 @@ Die Option **Polling** ist für lokale Ordner in der Regel nicht notwendig.
 Ist der zu überwachende Ordner ein eingehängtes Netzlaufwerk, musst du Polling aktivieren, damit neue Dateien erkannt werden.
 
 <p class="notice">
-In der Beta 3 kann es vorkommen, dass neue Dateien in lokalen Ordnern nicht korrekt erkannt werden.
+In der Beta 3 und 4 kann es vorkommen, dass neue Dateien in lokalen Ordnern nicht korrekt erkannt werden.
 Aktiviere in diesem Fall die Option <i>Polling</i>.
 Auch werden derzeit ausschließlich PDF-Dateien erkannt.
 </p>

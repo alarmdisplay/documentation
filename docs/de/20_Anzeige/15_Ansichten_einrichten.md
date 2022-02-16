@@ -26,10 +26,6 @@ Die Dimensionen des Rasters (Spalten und Zeilen) können für jede Ansicht separ
 
 Bei den Komponenten _Ankündigungen_ und _DWD-Unwetterkarte_ kann durch einen Klick auf den Namen der Komponente ein Fenster mit Optionen geöffnet werden.
 
-*Hinweis:*
-Aufgrund eines Fehlers werden bei Komponenten, die der Ansicht gerade neu hinzugefügt wurden, die Optionen nicht übernommen.
-Deshalb sollten die Optionen erst bearbeitet werden, nachdem die Ansicht gespeichert wurde.
-
 ## Alarmbildschirm
 Im Moment kann das Aussehen des Alarmbildschirms nicht individuell angepasst werden.
 Der standardmäßige Alarmbildschirm versucht, die vorhandenen Informationen möglichst klar darzustellen.

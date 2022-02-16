@@ -62,6 +62,9 @@ Die zusätzlichen Bezeichner von Einsatzmitteln wie Namen oder Selektivrufe
 ### `/serial-monitors`
 Zu überwachende serielle Schnittstellen
 
+### `/settings`
+Allgemeine Einstellungen
+
 ### `/textanalysis`
 Einstellungen, welche Textanalyse für welche Quelle verwendet wird
 
