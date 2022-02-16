@@ -56,7 +56,7 @@ LOG_LEVEL=debug
 Starte den Container mit dem folgenden Befehl:
 
 ```shell
-docker run -d --env-file /home/pi/env/display.env -p 3031:3031 --name display --restart always alarmdisplay/display:1.0.0-beta.3
+docker run -d --env-file /home/pi/env/display.env -p 3031:3031 --name display --restart always alarmdisplay/display:1.0.0-beta.4
 ```
 
 Damit läuft der Container im Hintergrund und startet auch automatisch beim Hochfahren deines Rechners.
