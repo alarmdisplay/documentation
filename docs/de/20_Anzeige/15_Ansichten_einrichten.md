@@ -35,7 +35,13 @@ Enthalten sind:
 - Stichwort
 - Verstrichene Zeit
 - Adresse
+- Karte des Einsatzortes
 - Freitext
 - Aktuelle Uhrzeit
 
 ![](alert-screen.png)
+
+Die Karte wird angezeigt, sobald Koordinaten in den Einsatzdaten enthalten sind.
+In der Console kann unter _Einstellungen_ die Position der Wache eingetragen werden, um diese mit auf der Karte anzuzeigen.
+
+Wenn das Display als Tablet konfiguriert ist, wird anstelle der Karte ein Knopf angezeigt, mit dem die Koordinaten in eine Navigations- oder Karten-App übernommen werden können.
