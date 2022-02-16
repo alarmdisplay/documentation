@@ -33,6 +33,14 @@ MYSQL_URI=mysql://hubserver:Bitte_ersetzen@db:3306/ad_hub
 
 Hier wird angenommen, dass die Datenbank in einem Docker-Container namens _db_ betrieben wird.
 
+### Logging
+Die Schwelle für die Logausgaben ist im Standard auf _INFO_ eingestellt, was für den normalen Betrieb ausreicht.
+Zur Fehlersuche kannst du detaillierteres Logging mit der folgenden Umgebungsvariable aktivieren:
+
+```ini
+LOG_LEVEL=debug
+```
+
 ## Container starten
 Starte den Container mit dem folgenden Befehl:
 
