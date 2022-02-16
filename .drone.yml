@@ -1,3 +1,4 @@
+---
 kind: pipeline
 type: docker
 name: build
@@ -45,3 +46,8 @@ trigger:
   branch:
     include:
       - main
+---
+kind: signature
+hmac: b736db5881a2fc8ee1c08847b0606116e1a3fcd9b583457ca874228e542e0a2c
+
+...
