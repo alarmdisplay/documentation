@@ -17,6 +17,11 @@ Beides kann aus den Paketquellen installiert werden.
 sudo apt-get install nodejs npm
 ```
 
+<p class="notice">
+Es ist mindestens Node.js in Version 12 erforderlich, empfohlen wird jedoch Version 16.
+Da in den Paketquellen meist ältere Versionen zu finden sind, empfiehlt es sich, vor der Installation die <a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall" target="_blank">Paketquellen von NodeSource</a> einzubinden. 
+</p>
+
 ## Zusätzliche Software
 Für die Verarbeitung von Alarmfaxen wird weitere Software benötigt, die mit den folgenden Befehlen installiert und konfiguriert werden kann:
 ```bash
