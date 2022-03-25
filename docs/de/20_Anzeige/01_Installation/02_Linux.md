@@ -73,9 +73,18 @@ sudo forever-service install -s index.js -r pi -e "NODE_ENV=production" alarmdis
 ```
 Die Option `-r pi` gibt an, dass der Prozess unter dem Benutzer `pi` ausgeführt werden soll.
 Hier kann ein beliebiger anderer Benutzer angegeben werden, aus Sicherheitsgründen sollte es aber nicht `root` sein.
-Der Name des neuen Services ist hier `alarmdisplay_display`, auch dieser kann nach eigenen Vorlieben verändert werden.
+Jetzt kannst du den Dienst mit dem `service`-Kommando steuern, z. B. `sudo service alarmdisplay_display restart`.
 
 ## Betrieb überwachen
-Der Server protokolliert wichtige Ereignisse oder Fehler.
-Wenn der Service im vorigen Schritt `alarmdisplay_display` genannt wurde, heißt die Protokolldatei `/var/log/alarmdisplay_display.log`.
-Mit dem Befehl `tail /var/log/alarmdisplay_display.log` können die neuesten Einträge angesehen werden.
+Der Server protokolliert wichtige Ereignisse oder Fehler in der Datei `/var/log/alarmdisplay_display.log`.
+Mit dem Befehl `tail -f /var/log/alarmdisplay_display.log` wird das Ende der Datei angezeigt und neue Einträge tauchen automatisch auf.
+
+## Updates
+Wenn eine neue Version erscheint, läuft das Update sehr ähnlich zur Installation.
+Also Release herunterladen, entpacken und mit `npm` die Abhängigkeiten installieren.
+Die Datei `config/local-production.json` kann aus der bestehenden Installation übernommen werden.
+
+Wenn alles bereit ist, stoppe den Dienst mit `sudo service alarmdisplay_display stop`.
+Ersetze die bestehende Installation mit dem eben vorbereiteten Ordner.
+Dabei kann es ratsam sein, den alten Ordner zuvor umzubenennen (z.B. von `display` zu `display_old`), um bei Fehlern auf diese funktionierende Variante zurückgreifen zu können.
+Starte dann den Dienst mit `sudo service alarmdisplay_display start` und prüfe die Logdatei auf eventuelle Warnungen oder Fehlermeldungen.
