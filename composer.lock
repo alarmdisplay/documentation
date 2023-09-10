@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b8bf62234f1ca522fe0eb86cf806fca",
+    "content-hash": "088dfeaf953d2dc6706c4d7dbfec7c12",
     "packages": [],
     "packages-dev": [
         {
             "name": "daux/daux.io",
-            "version": "0.19.0",
+            "version": "0.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dauxio/daux.io.git",
-                "reference": "5190743428688b8de02cb7895eea4cfc3f95ec96"
+                "reference": "68d9a27b195037df3863b0729053f013539a5e66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dauxio/daux.io/zipball/5190743428688b8de02cb7895eea4cfc3f95ec96",
-                "reference": "5190743428688b8de02cb7895eea4cfc3f95ec96",
+                "url": "https://api.github.com/repos/dauxio/daux.io/zipball/68d9a27b195037df3863b0729053f013539a5e66",
+                "reference": "68d9a27b195037df3863b0729053f013539a5e66",
                 "shasum": ""
             },
             "require": {
@@ -26,7 +26,7 @@
                 "guzzlehttp/guzzle": "~6.0 || ~7.0",
                 "league/commonmark": "^2.2.0",
                 "league/plates": "~3.1",
-                "php": ">=8.0",
+                "php": ">=8.1",
                 "scrivo/highlight.php": "^9.15",
                 "symfony/console": "^4.4|^5.0|^6.0",
                 "symfony/http-foundation": "^4.4|^5.0|^6.0",
@@ -39,7 +39,9 @@
                 "justinwalsh/daux.io": "*"
             },
             "require-dev": {
-                "mikey179/vfsstream": "^1.6"
+                "mikey179/vfsstream": "^1.6",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
             },
             "suggest": {
                 "ext-intl": "Allows to translate the modified at date"
@@ -77,9 +79,9 @@
             ],
             "support": {
                 "issues": "https://github.com/dauxio/daux.io/issues",
-                "source": "https://github.com/dauxio/daux.io/tree/0.19.0"
+                "source": "https://github.com/dauxio/daux.io/tree/0.22.0"
             },
-            "time": "2022-06-17T14:24:03+00:00"
+            "time": "2023-05-11T22:50:18+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
