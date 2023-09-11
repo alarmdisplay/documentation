@@ -46,6 +46,14 @@ a {
     background-color: aliceblue;
 }
 
+body.dark .notice {
+    color: #333;
+}
+
+body.dark .notice code {
+    color: #fff;
+}
+
 /* Fix contrast */
 .Nav .Nav .Nav__item--active a {
     color: #000;
