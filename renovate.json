@@ -1,6 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:best-practices",
+    ":maintainLockFilesWeekly",
+    ":separateMultipleMajorReleases"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "php"
+      ],
+      "groupName": "PHP",
+      "separateMultipleMinor": true
+    }
   ]
 }
