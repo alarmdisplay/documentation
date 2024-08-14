@@ -5,7 +5,7 @@ name: build
 
 steps:
   - name: install
-    image: composer:2.7.7
+    image: composer:2.7.7@sha256:2088445f2bcaea6fe72cefcdd9ef0cb75139ee103459cc0d1dad496e19847d2c
     commands:
       - composer install
   - name: build
@@ -13,7 +13,7 @@ steps:
     commands:
       - ./vendor/bin/daux generate
   - name: deploy
-    image: cschlosser/drone-ftps
+    image: cschlosser/drone-ftps@sha256:a376718d90e289d2d09860bf6d526bee2878f467dd61b819ec9e2c3eecc6821f
     environment:
       FTP_USERNAME:
         from_secret: username
