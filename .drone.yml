@@ -9,7 +9,7 @@ steps:
     commands:
       - composer install
   - name: build
-    image: php:8.1.29
+    image: php:8.1.29@sha256:f6f1025cee16bda4f0f743fe539027bb7908526fdf86141f256647d0d4b40d2e
     commands:
       - ./vendor/bin/daux generate
   - name: deploy
@@ -36,6 +36,6 @@ trigger:
       - main
 ---
 kind: signature
-hmac: 8d480c786ee47785e6973feb0d7aedb7d3c83df4cb9ae85e9bc4a7f0d1064d78
+hmac: e945601f94cfad3218230d189d4acfcad8a21d2934c326188b3c1a5d5c39c3c6
 
 ...
