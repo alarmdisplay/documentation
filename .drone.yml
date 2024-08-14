@@ -36,6 +36,6 @@ trigger:
       - main
 ---
 kind: signature
-hmac: 36d4e0144c3028225940f1b43d2cc8467c5dbfc7921beefa284b2382de982e62
+hmac: 8d480c786ee47785e6973feb0d7aedb7d3c83df4cb9ae85e9bc4a7f0d1064d78
 
 ...
