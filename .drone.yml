@@ -34,8 +34,4 @@ trigger:
   branch:
     include:
       - main
----
-kind: signature
-hmac: 061a28030b6cd5c712e37174483ba6484ab67fe2f47a9053d47c39e2ebe6a639
 
-...
