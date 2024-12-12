@@ -5,7 +5,7 @@ name: build
 
 steps:
   - name: install
-    image: composer:2.8.3@sha256:26bbf85fccb36247181de6f4a2beddac47d4b352c0c19249a3b4fa2abf1e38ad
+    image: composer:2.8.3@sha256:f9fc37e703b0606fcbfc1e809ebfef21e3d5a494fe579a9dc2f310d4c9a83aad
     commands:
       - composer install
   - name: build
