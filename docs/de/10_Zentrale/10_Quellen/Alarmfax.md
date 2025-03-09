@@ -2,8 +2,9 @@
 title: Alarmfax
 ---
 
-Das Alarmfax muss als PDF-Datei vorliegen, um verarbeitet werden zu können.
+Das Alarmfax sollte als PDF-Datei vorliegen, um verarbeitet werden zu können.
 Das ist beispielsweise über die eingebaute Faxfunktion der FRITZ!Box möglich.
+Ab der Beta 5 können aber auch Bilddateien der Formate TIFF, JPG, PNG und BMP eingelesen werden.
 
 ## Ordner überwachen
 Klicke auf den Reiter _Eingang_ und wähle dann unter _Quelle hinzufügen_ den Punkt _Überwachter Ordner_ aus.
@@ -15,9 +16,8 @@ Die Option **Polling** ist für lokale Ordner in der Regel nicht notwendig.
 Ist der zu überwachende Ordner ein eingehängtes Netzlaufwerk, musst du Polling aktivieren, damit neue Dateien erkannt werden.
 
 <p class="notice">
-In der Beta 3 und 4 kann es vorkommen, dass neue Dateien in lokalen Ordnern nicht korrekt erkannt werden.
+In der Beta 3–5 kann es vorkommen, dass neue Dateien in lokalen Ordnern nicht erkannt werden.
 Aktiviere in diesem Fall die Option <i>Polling</i>.
-Auch werden derzeit ausschließlich PDF-Dateien erkannt.
 </p>
 
 Nach dem Speichern kannst du noch ein **Layout** zur Textanalyse auswählen, mit dem die eingehenden Alarme zerlegt werden.

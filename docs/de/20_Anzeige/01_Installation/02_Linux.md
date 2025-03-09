@@ -18,7 +18,7 @@ sudo apt-get install nodejs npm
 ```
 
 <p class="notice">
-Es ist mindestens Node.js in Version 12 erforderlich, empfohlen wird jedoch Version 16.
+Es ist mindestens Node.js in Version 16 erforderlich, empfohlen wird jedoch Version 20.
 Da in den Paketquellen meist ältere Versionen zu finden sind, empfiehlt es sich, vor der Installation die <a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall" target="_blank">Paketquellen von NodeSource</a> einzubinden. 
 </p>
 
@@ -27,8 +27,8 @@ Lade das aktuelle Beta-Release herunter und entpacke es.
 Beim Entpacken entsteht ein neuer Ordner `display`.
 
 ```bash
-wget https://github.com/alarmdisplay/display/releases/download/v1.0.0-beta.4/display-1.0.0-beta.4.tar.gz
-tar -xzf display-1.0.0-beta.4.tar.gz
+wget https://github.com/alarmdisplay/display/releases/download/v1.0.0-beta.5/display-1.0.0-beta.5.tar.gz
+tar -xzf display-1.0.0-beta.5.tar.gz
 cd display
 ```
 
@@ -49,7 +49,10 @@ edit ./config/local-production.json
 Mit den Werten aus der [Anleitung zum Anlegen der Datenbank](Allgemein#page_Datenbank) würde die Datei folgendermaßen aussehen:
 ```json
 {
-  "mysql": "mysql://displayserver:Bitte_ersetzen@localhost:3306/ad_display"
+  "dbConfig": {
+    "dialect": "mysql",
+    "connection": "mysql://displayserver:Bitte_ersetzen@localhost:3306/ad_display"
+  }
 }
 ```
 

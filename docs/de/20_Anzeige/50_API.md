@@ -44,6 +44,12 @@ Die Ankündigungen
 ### `/api/v1/api-keys`
 API-Keys
 
+### `/api/v1/calendar-feeds`
+Die abonnierten Kalender-Feeds
+
+### `/api/v1/calendar-items`
+Kalendereinträge aus den Feeds (read-only)
+
 ### `/api/v1/content-slot-options`
 Optionen für einzelne Content Slots
 

@@ -7,7 +7,7 @@ Für eine benutzerfreundliche Einrichtung und Verwaltung stellt der Server die [
 ## Features
 
 - Web-App für Anzeigegeräte
-    - Ruhemodus mit Uhrzeit/Datum, Ankündigungen und DWD-Unwetterkarten
+    - Ruhemodus mit Uhrzeit/Datum, Ankündigungen, Terminen und DWD-Unwetterkarten
     - Alarmbildschirm mit Einsatzgrund, Stichwort, Zeit seit dem Alarmeingang, Zieladresse und Freitext der Leitstelle
 - Web-App zur Verwaltung aller Einstellungen im Browser
     - Schneller Einrichtungsprozess für neue Displays

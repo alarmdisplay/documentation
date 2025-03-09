@@ -18,7 +18,7 @@ sudo apt-get install nodejs npm
 ```
 
 <p class="notice">
-Es ist mindestens Node.js in Version 12 erforderlich, empfohlen wird jedoch Version 16.
+Es ist mindestens Node.js in Version 16 erforderlich, empfohlen wird jedoch Version 20.
 Da in den Paketquellen meist ältere Versionen zu finden sind, empfiehlt es sich, vor der Installation die <a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall" target="_blank">Paketquellen von NodeSource</a> einzubinden. 
 </p>
 
@@ -34,8 +34,8 @@ Lade das aktuelle Beta-Release herunter und entpacke es.
 Beim Entpacken entsteht ein neuer Ordner `hub`.
 
 ```bash
-wget https://github.com/alarmdisplay/hub/releases/download/v1.0.0-beta.4/hub-1.0.0-beta.4.tar.gz
-tar -xzf hub-1.0.0-beta.4.tar.gz
+wget https://github.com/alarmdisplay/hub/releases/download/v1.0.0-beta.5/hub-1.0.0-beta.5.tar.gz
+tar -xzf hub-1.0.0-beta.5.tar.gz
 cd hub
 ```
 

@@ -13,7 +13,7 @@ In diesem Fall zeigt das Display einfach das aktuelle Datum und die Uhrzeit mitt
 Falls dies ausreicht, muss nichts weiter eingestellt werden.
 
 Um den Ruhemodus informativer zu gestalten, stehen eine Reihe von Komponenten zur Verfügung.
-Dazu zählen neben Datum/Uhrzeit noch _Ankündigungen_ zur Auflistung von Neuigkeiten und Unwetterkarten des DWD.
+Dazu zählen neben Datum/Uhrzeit noch _Ankündigungen_ zur Auflistung von Neuigkeiten, Kalendereinträge und Unwetterkarten des DWD.
 Weitere Komponenten sind in Planung, Ideen können gerne in der [Community](https://community.alarmdisplay.org/c/funktionalitaet/alarmanzeige/8) eingebracht werden.
 
 Um die Komponenten zu verwenden, muss erst mit dem Knopf _Ansicht hinzufügen_ eine leere Ansicht angelegt werden.

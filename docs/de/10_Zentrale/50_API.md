@@ -53,11 +53,17 @@ Die Örtlichkeiten von Einsätzen
 ### `/print-tasks`
 Druckaufträge für erkannte Dateien
 
+### `/processed-files`
+Bereits verarbeitete Dateien
+
 ### `/resources`
 Die Einsatzmittel
 
 ### `/resource-identifiers`
 Die zusätzlichen Bezeichner von Einsatzmitteln wie Namen oder Selektivrufe
+
+### `/scheduled-alerts`
+Zeitbereiche für Alarm-Ausnahmen (z.B. Probealarm)
 
 ### `/serial-monitors`
 Zu überwachende serielle Schnittstellen
