@@ -45,7 +45,7 @@ LOG_LEVEL=debug
 Starte den Container mit dem folgenden Befehl:
 
 ```shell
-docker run -d --env-file /home/pi/env/hub.env -p 3030:3030 --name hub --restart always alarmdisplay/hub:1.0.0-beta.4
+docker run -d --env-file /home/pi/env/hub.env -p 3030:3030 --name hub --restart always alarmdisplay/hub:1.0.0-beta.5
 ```
 
 Damit läuft der Container im Hintergrund und startet auch automatisch beim Hochfahren deines Rechners.

@@ -27,8 +27,8 @@ Lade das aktuelle Beta-Release herunter und entpacke es.
 Beim Entpacken entsteht ein neuer Ordner `display`.
 
 ```bash
-wget https://github.com/alarmdisplay/display/releases/download/v1.0.0-beta.4/display-1.0.0-beta.4.tar.gz
-tar -xzf display-1.0.0-beta.4.tar.gz
+wget https://github.com/alarmdisplay/display/releases/download/v1.0.0-beta.5/display-1.0.0-beta.5.tar.gz
+tar -xzf display-1.0.0-beta.5.tar.gz
 cd display
 ```
 
