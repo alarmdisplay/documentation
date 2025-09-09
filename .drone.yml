@@ -9,7 +9,7 @@ steps:
     commands:
       - composer install
   - name: build
-    image: php:8.4.11@sha256:22dfaf12390946424b932c67f3f949268511e6a834f788f4e8a6fa34fb12d1c4
+    image: php:8.4.12@sha256:7b8a4b4731b5825308e5bf07e0d9b319929cfc7986a6c4d480974ef9da8b846b
     commands:
       - ./vendor/bin/daux generate
   - name: deploy
