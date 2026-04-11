@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0cc329b58ee2268e38f843adcc7d77d0",
+    "content-hash": "a2488659ef2dc817c0789c1ad3dd1b2b",
     "packages": [],
     "packages-dev": [
         {
             "name": "daux/daux.io",
-            "version": "0.23.0",
+            "version": "0.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dauxio/daux.io.git",
-                "reference": "844aeb309b9b617a80af08f3b3b40fe3a50cfa8b"
+                "reference": "501596e6f32c3ff2bc6a381d5034e15ee5811606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dauxio/daux.io/zipball/844aeb309b9b617a80af08f3b3b40fe3a50cfa8b",
-                "reference": "844aeb309b9b617a80af08f3b3b40fe3a50cfa8b",
+                "url": "https://api.github.com/repos/dauxio/daux.io/zipball/501596e6f32c3ff2bc6a381d5034e15ee5811606",
+                "reference": "501596e6f32c3ff2bc6a381d5034e15ee5811606",
                 "shasum": ""
             },
             "require": {
@@ -26,14 +26,14 @@
                 "guzzlehttp/guzzle": "~6.0 || ~7.0",
                 "league/commonmark": "^2.4.0",
                 "league/plates": "~3.1",
-                "php": ">=8.3",
+                "php": ">=8.4",
                 "scrivo/highlight.php": "^9.15",
-                "symfony/console": "^5.0|^6.0|^7.0",
-                "symfony/http-foundation": "^5.0|^6.0|^7.0",
-                "symfony/mime": "^5.0|^6.0|^7.0",
+                "symfony/console": "^7.0|^8.0",
+                "symfony/http-foundation": "^7.0|^8.0",
+                "symfony/mime": "^7.0|^8.0",
                 "symfony/polyfill-intl-icu": "^1.10",
-                "symfony/process": "^5.0|^6.0|^7.0",
-                "symfony/yaml": "^5.0|^6.0|^7.0"
+                "symfony/process": "^7.0|^8.0",
+                "symfony/yaml": "^7.0|^8.0"
             },
             "replace": {
                 "justinwalsh/daux.io": "*"
@@ -41,7 +41,7 @@
             "require-dev": {
                 "mikey179/vfsstream": "^1.6",
                 "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^12.0"
+                "phpunit/phpunit": "^13.0"
             },
             "suggest": {
                 "ext-intl": "Allows to translate the modified at date"
@@ -79,9 +79,9 @@
             ],
             "support": {
                 "issues": "https://github.com/dauxio/daux.io/issues",
-                "source": "https://github.com/dauxio/daux.io/tree/0.23.0"
+                "source": "https://github.com/dauxio/daux.io/tree/0.24.0"
             },
-            "time": "2025-09-02T14:52:57+00:00"
+            "time": "2026-02-20T21:51:41+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
