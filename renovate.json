@@ -3,7 +3,7 @@
   "extends": [
     "config:best-practices",
     "group:allDigest",
-    ":maintainLockFilesWeekly",
+    ":maintainLockFilesMonthly",
     ":separateMultipleMajorReleases"
   ],
   "packageRules": [
